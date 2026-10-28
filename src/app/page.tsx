@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteShell } from "@/components/layout/site-shell";
 import { Section } from "@/components/ui/section";
 
@@ -18,6 +19,14 @@ export default function Home() {
             frontend architecture, clear public-health messaging, and an
             implementation-ready structure for future modules.
           </p>
+          <div className="mt-6">
+            <Link
+              href="/app/dashboard"
+              className="inline-flex rounded-md bg-white px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm hover:bg-emerald-50"
+            >
+              Open ActionIQ workspace
+            </Link>
+          </div>
         </section>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -35,11 +44,11 @@ export default function Home() {
               <li>• Public-health communication must be clear and responsible</li>
             </ul>
           </Section>
-          <Section title="Phase 0 scope">
+          <Section title="Current implementation scope">
             <ul className="space-y-2 text-sm text-slate-700">
-              <li>• Next.js + TypeScript + Tailwind foundation</li>
-              <li>• Reusable layout and UI building blocks</li>
-              <li>• No authentication, data model, or AI integrations yet</li>
+              <li>• Reusable landing + application layout shells</li>
+              <li>• Responsive navigation for planned ActionIQ sections</li>
+              <li>• Placeholder pages for iterative feature delivery</li>
             </ul>
           </Section>
         </div>
@@ -66,9 +75,9 @@ export default function Home() {
             Foundation architecture for upcoming phases
           </h2>
           <p className="mt-2 text-slate-600">
-            The repository now includes dedicated areas for features, shared
-            components, and utility code so Phase 1 can add product capabilities
-            without restructuring core foundations.
+            The repository includes dedicated areas for features, shared
+            components, and utility code so each upcoming phase can be added in
+            small, testable increments without restructuring core foundations.
           </p>
         </div>
       </div>
