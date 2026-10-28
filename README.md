@@ -12,17 +12,26 @@ This project is educational and informational. It does **not** replace:
 - Official water authority advisories
 - Professional medical advice
 
-## Current status: Phase 0 (foundation)
+## Current status: Phase 1 (layout and navigation)
 
-This repository currently contains only the foundation layer:
+This repository now contains the Phase 0 foundation plus a Phase 1 application
+shell for planned product sections:
 
 - Next.js (App Router) + TypeScript + Tailwind CSS setup
-- Accessible, responsive landing page
-- Reusable UI/layout starter components
+- Accessible, responsive landing page (still public-facing)
+- Responsive ActionIQ application shell (desktop + mobile navigation)
+- Placeholder pages for planned sections:
+  - Dashboard
+  - Analyze Water
+  - Water Sources
+  - History
+  - Settings
+  - Safety & Methodology
+- Reusable UI/layout starter components for incremental feature delivery
 - Scalable folder structure for future modules
 - Environment variable template (`.env.example`) with placeholders only
 
-Out of scope in this phase:
+Still out of scope in this phase:
 
 - Authentication
 - Database schema and migrations
@@ -33,10 +42,11 @@ Out of scope in this phase:
 
 ## Incremental development approach
 
-- **Phase 0**: foundation and architecture (this release)
-- **Phase 1**: sample intake, validation, and rule-based risk baseline
-- **Phase 2**: AI-assisted explanation layer with safety guardrails
-- **Phase 3**: history/reporting and operational hardening
+- **Phase 0**: foundation and architecture ✅
+- **Phase 1**: layout and navigation shell ✅
+- **Phase 2**: authentication and protected user context (next recommended step)
+- **Phase 3**: water input + rule-based evaluation baseline
+- **Phase 4**: treatment compatibility, AI explanations, and saved reports
 
 ## Project structure
 
@@ -75,6 +85,21 @@ src/
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000).
+
+## Navigate the Phase 1 placeholder app
+
+- Landing page: `/`
+- Enter the app shell: click **Enter ActionIQ app shell** (or open `/dashboard`)
+- Placeholder routes:
+  - `/dashboard`
+  - `/analyze-water`
+  - `/water-sources`
+  - `/history`
+  - `/settings`
+  - `/safety-methodology`
+
+Implementation is intentionally incremental: components are being delivered one
+phase at a time rather than all modules at once.
 
 ## Quality commands
 

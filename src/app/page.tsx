@@ -1,5 +1,6 @@
 import { SiteShell } from "@/components/layout/site-shell";
 import { Section } from "@/components/ui/section";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,6 +19,14 @@ export default function Home() {
             frontend architecture, clear public-health messaging, and an
             implementation-ready structure for future modules.
           </p>
+          <div className="mt-6">
+            <Link
+              href="/dashboard"
+              className="inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Enter ActionIQ app shell
+            </Link>
+          </div>
         </section>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
